@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Fahrenheit"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editText_Fah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nhập độ F"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Celsius"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editText_Cel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nhập độ C"
+        android:textSize="25dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/row1">
+
+            <Button
+                android:id="@+id/button_FtoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert To Celsius" />
+
+            <Button
+                android:id="@+id/button_CtoF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert To Fahrenheit" />
+
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/button_Clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@android:color/holo_red_dark"/>
+</LinearLayout>

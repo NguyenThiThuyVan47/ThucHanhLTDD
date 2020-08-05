@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/row1">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số a:"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <EditText
+                android:id="@+id/editText_Soa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nhập số a"
+                android:textSize="25dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số b:"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/editText_Sob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nhập số b"
+                android:textSize="25dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView_Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="25dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/button_Tong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng 2 số"
+        android:textSize="25dp"/>
+
+
+
+    <Button
+        android:id="@+id/button_Hieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiệu 2 số"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/button_Tich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tích 2 số"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/button_Thuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thương 2 số"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/button_Uscln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ước số chung lớn nhất"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/button_Thoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát chương trình"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+</LinearLayout>
